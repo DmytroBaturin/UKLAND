@@ -2,8 +2,10 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  position: relative;
   justify-content: center;
-  margin-top: 150px;
+  padding-top: 160px;
+  background: rgba(5, 10, 17, 0.82);
   z-index: 1;
 }
 body:has(.root) {
