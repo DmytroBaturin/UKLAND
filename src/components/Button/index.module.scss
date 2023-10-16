@@ -1,0 +1,13 @@
+.root{
+ padding: 12px 32px;
+ border: none;
+ color: white;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ border-radius: 30px;
+ transition: transform 0.1s ease-in-out;
+ &:hover{
+  transform: scale(1.03);
+ }
+}

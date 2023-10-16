@@ -1,0 +1,17 @@
+.root{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  z-index: 1;
+}
+body:has(.root) {
+  overflow: hidden !important;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  gap: 30px;
+}

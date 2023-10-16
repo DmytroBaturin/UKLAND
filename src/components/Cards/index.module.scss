@@ -1,0 +1,30 @@
+.root{
+  border-radius: 20px;
+  padding: 50px 5px;
+  display: flex;
+  width: 305px;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+  &:hover {
+    transform: translate(0, -2px);
+    background: rgba(255, 255, 255, 0.02)
+  }
+  p{
+    width: 242px;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    margin: 0 auto;
+    line-height: normal;
+  }
+}
+.title{
+  margin-bottom: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

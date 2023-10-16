@@ -1,0 +1,26 @@
+.title{
+  margin: 57px auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+    img{
+      position: relative;
+      bottom: 4px;
+      width: 73px;
+    }
+}
+.container{
+  margin-left: 15px;
+  margin-right: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 140px;
+  display: flex;
+}
+@media screen and (max-width: 425px) {
+  .title{
+    h1{
+      font-size: 20px;
+    }
+  }
+}

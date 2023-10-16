@@ -1,0 +1,29 @@
+.root{
+  height: 100vh;
+  background-image: url("/assets/background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(107, 220, 51, 0.02);
+}
+.buttons{
+  display: flex;
+  gap: 20px
+}
+@media screen and (max-width: 425px){
+  .buttons{
+    flex-direction: column;
+  }
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 170px;
+  align-items: center;
+  p{
+    color: white;
+    opacity: 0.5;
+  }
+}

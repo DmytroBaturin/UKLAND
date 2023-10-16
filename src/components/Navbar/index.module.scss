@@ -1,0 +1,42 @@
+.root{
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(5px);
+  z-index: 2;
+}
+.navbar{
+  padding: 15px 120px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.menu{
+  img{
+    display: none;
+  }
+  a{
+    font-weight: 300;
+  }
+  display: flex;
+  gap: 60px;
+}
+@media screen and (max-width: 768px) {
+  .navbar{
+    padding: 15px 80px;
+  }
+  .menu{
+    img{
+      display: initial;
+    }
+    a{
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .navbar{
+    padding: 15px 25px;
+  }
+
+}

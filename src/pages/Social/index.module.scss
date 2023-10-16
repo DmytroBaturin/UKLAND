@@ -1,0 +1,27 @@
+.title{
+  margin-top: 60px;
+  margin-left: 120px;
+}
+.container{
+
+  width: 90%;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 60px auto;
+  justify-content: center;
+  gap: 20px;
+}
+.subtitle{
+  opacity: 0.4;
+}
+@media screen and (max-width: 425px) {
+  .title{
+    margin-left: 20px;
+    h1{
+      font-size: 20px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+}
