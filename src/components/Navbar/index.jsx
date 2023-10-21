@@ -1,6 +1,7 @@
 import styles from "./index.module.scss";
 import { useEffect, useState } from "react";
 import { MobileNavbar } from "../MobileNavbar/index.jsx";
+import { Link, NavLink } from "react-router-dom";
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
@@ -15,9 +16,11 @@ export const Navbar = () => {
   return (
     <div className={styles.root}>
       <span className={styles.navbar}>
-        <img src="./assets/logo.svg" width="80" height="70" />
+        <Link to="/">
+          <img src="./assets/logo.svg" width="80" height="70" />
+        </Link>
         <span className={styles.menu}>
-          <a href="#">Правила</a>
+          <NavLink to="/news">Правила</NavLink>
           <a href="#">Вікі</a>
           <a href="#">Чому ми?</a>
           <img
@@ -29,7 +32,7 @@ export const Navbar = () => {
           />
         </span>
       </span>
-      {open && <MobileNavbar />}
+      {open && <MobileNavbar onClick={() => setOpen(!open)} />}
     </div>
   );
 };

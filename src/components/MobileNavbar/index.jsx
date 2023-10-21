@@ -1,12 +1,19 @@
 import styles from "./index.module.scss";
+import { NavLink } from "react-router-dom";
 
-export const MobileNavbar = () => {
+export const MobileNavbar = ({ onClick }) => {
   return (
     <div className={styles.root}>
       <span className={styles.menu}>
-        <a href="#">Правила</a>
-        <a href="#">Вікі</a>
-        <a href="#">Чому ми?</a>
+        <NavLink onClick={() => onClick()} to="/news">
+          Правила
+        </NavLink>
+        <a onClick={() => onClick()} href="#">
+          Вікі
+        </a>
+        <a onClick={() => onClick()} href="#">
+          Чому ми?
+        </a>
       </span>
     </div>
   );

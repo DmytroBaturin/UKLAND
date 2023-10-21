@@ -1,17 +1,16 @@
-import { Main } from "./pages/Main";
 import "./global.scss";
-import { Advantages } from "./pages/Advantages";
-import { Store } from "./pages/Store";
-import { Social } from "./pages/Social/index.jsx";
-import { Footer } from "./components/Footer";
+import { Navbar } from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import { MainPage } from "./pages/MainPage/index.jsx";
+import { NewsPage } from "./pages/NewsPage";
 function App() {
   return (
     <>
-      <Main />
-      <Advantages />
-      <Store />
-      <Social />
-      <Footer />
+      <Navbar />
+      <Routes>
+        <Route element={<MainPage />} path="/"></Route>
+        <Route element={<NewsPage />} path="/news"></Route>
+      </Routes>
     </>
   );
 }

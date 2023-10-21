@@ -88,7 +88,7 @@ export const Form = () => {
         <div>
           <span>
             <div className={styles.title}>
-              {controller()}
+              {season()}
               <h1>Про сезони</h1>
             </div>
             <p>
@@ -102,7 +102,7 @@ export const Form = () => {
         <div>
           <span>
             <div className={styles.title}>
-              {season()}
+              {controller()}
               <h1>Про гру</h1>
             </div>
             <p>

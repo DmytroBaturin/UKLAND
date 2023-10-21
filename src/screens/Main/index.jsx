@@ -7,6 +7,10 @@ import { useSelector, useDispatch } from "react-redux";
 import { Modal } from "../../components/Modal/index.jsx";
 import { openModal } from "../../store/modalSlice.jsx";
 import { useEffect, useState } from "react";
+import { Advantages } from "../Advantages/index.jsx";
+import { Store } from "../Store/index.jsx";
+import { Social } from "../Social/index.jsx";
+import { Footer } from "../../components/Footer/index.jsx";
 
 export const Main = () => {
   const [copying, setCopy] = useState(false);
@@ -68,7 +72,7 @@ export const Main = () => {
           }}
         />
       )}
-      <Navbar />
+
       <div className={styles.main}>
         <img src="/assets/logo.svg" />
         <div className={styles.buttons}>
