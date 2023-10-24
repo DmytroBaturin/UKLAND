@@ -8,12 +8,12 @@ export const MobileNavbar = ({ onClick }) => {
         <NavLink onClick={() => onClick()} to="/news">
           Правила
         </NavLink>
-        <a onClick={() => onClick()} href="#">
+        <NavLink onClick={() => onClick()} to="/wiki">
           Вікі
-        </a>
-        <a onClick={() => onClick()} href="#">
+        </NavLink>
+        <NavLink onClick={() => onClick()} to="/why">
           Чому ми?
-        </a>
+        </NavLink>
       </span>
     </div>
   );

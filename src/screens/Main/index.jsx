@@ -31,7 +31,7 @@ export const Main = () => {
   }, []);
   const onClickCopy = () => {
     if (!copying) {
-      navigator.clipboard.writeText("dsada");
+      navigator.clipboard.writeText("ukland.pp.ua");
       setCopy(true);
       setButtonCopy((prevState) => {
         return {

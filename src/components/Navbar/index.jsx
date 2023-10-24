@@ -1,10 +1,12 @@
 import styles from "./index.module.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MobileNavbar } from "../MobileNavbar/index.jsx";
 import { Link, NavLink } from "react-router-dom";
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const navbar = useRef(null);
   useEffect(() => {
+    window.addEventListener("scroll", () => {});
     const handleResize = () => {
       setOpen(false);
     };
@@ -14,15 +16,15 @@ export const Navbar = () => {
     };
   }, []);
   return (
-    <div className={styles.root}>
+    <div ref={navbar} className={styles.root}>
       <span className={styles.navbar}>
         <Link to="/">
           <img src="./assets/logo.svg" width="80" height="70" />
         </Link>
         <span className={styles.menu}>
           <NavLink to="/news">Правила</NavLink>
-          <a href="#">Вікі</a>
-          <a href="#">Чому ми?</a>
+          <NavLink to="/wiki">Вікі</NavLink>
+          <NavLink to="/why">Чому ми?</NavLink>
           <img
             onClick={() => {
               setOpen(!open);

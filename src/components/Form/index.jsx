@@ -52,7 +52,7 @@ export const Form = () => {
     <div className={styles.root}>
       <div className={styles.price}>
         <span>
-          <h1>50$</h1>
+          <h1>50₴</h1>
           <p>на місяць</p>
         </span>
         <div className={styles.buttons}>

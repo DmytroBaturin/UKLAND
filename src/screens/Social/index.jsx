@@ -11,16 +11,19 @@ export const Social = () => {
       </div>
       <div className={styles.container}>
         <SocialCard
+          href="https://www.tiktok.com/@uklandproject"
           img={"assets/tiktok.png"}
           title={"TikTok"}
           text={"Тут цікавенькі короткі відео"}
         />
         <SocialCard
+          href="https://discord.com/invite/wGPaVgsQAh"
           img={"assets/discord.png"}
-          title={"TikTok"}
+          title={"Discord"}
           text={"Основний чат нашої спільноти"}
         />
         <SocialCard
+          href="https://www.tiktok.com/@uklandproject"
           img={"assets/wiki.png"}
           title={"Wiki"}
           text={"Тут всі наші правила, та важлива інформація"}
