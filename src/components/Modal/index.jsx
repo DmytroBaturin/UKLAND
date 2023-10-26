@@ -17,7 +17,7 @@ export const Modal = ({ onClick }) => {
             <div className={styles.voice}>
               <img src="assets/voice.png" width="50" />
               <h5>
-                Simple Voice - <span>*скачать*</span>
+                Simple Voice - <span>*посилання на оф. сайт*</span>
               </h5>
             </div>
           </div>
