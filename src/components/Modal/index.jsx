@@ -5,13 +5,22 @@ export const Modal = ({ onClick }) => {
       <div className={styles.modal}>
         <img width="30" src="assets/close.svg" onClick={onClick} />
         <div className={styles.info}>
-          <h1>Lorem Ipsum</h1>
+          <h1>Подача форми</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Vitae vitae non lectus enim
-            ut volutpat. Nibh feugiat ridiculus sed tortor cras id malesuada
-            curabitur felis. Cursus platea enim volutpat leo pellentesque nulla
-            placerat pellentesque. Accumsan egestas sed enim vel lectus nunc.
+            Щоб отримати прохідку, Вам потрібно звернутись до нашого адміну
+            серверу, та заповнити простеньку
+            <span> заявку (Клікни щоб скопіювати) </span>
+            та почекати до поки адмін прийме вашу заявку на сервер
           </p>
+          <div className={styles.about}>
+            <h3>Рекомендуємо завантажити</h3>
+            <div className={styles.voice}>
+              <img src="assets/voice.png" width="50" />
+              <h5>
+                Simple Voice - <span>*скачать*</span>
+              </h5>
+            </div>
+          </div>
         </div>
         <button>Подати заявку</button>
       </div>

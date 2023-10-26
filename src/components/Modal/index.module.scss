@@ -39,9 +39,34 @@ body:has(.modal) {
   overflow: hidden !important;
 }
 .info{
+  color: black;
   display: flex;
   gap: 10px;
   flex-direction: column;
-  margin-top:40px
+  margin-top:40px;
+  h3{
+    color: black;
+  }
+  h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+  }
+  p{
+  span{
+    color: #1573ec;
+  }
+}
+}
+.voice{
+  display: flex;
+  align-items: center;
+  span{
+    color: #1573ec;
+  }
+}
+.about{
+  display: flex;
+  flex-direction: column;
 }
 

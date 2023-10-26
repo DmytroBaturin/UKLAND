@@ -78,10 +78,8 @@ export const Form = () => {
               <h1>Про оплату</h1>
             </div>
             <p>
-              {" "}
-              Lorem ipsum dolor sit amet consectetur. Vitae vitae non lectus
-              enim ut volutpat. Nibh feugiat ridiculus sed tortor cras id
-              malesuada curabitur felis.{" "}
+              Оплата йде на рахунок monobank-у, спочатка оплата за вказаною
+              ціною, потім прохідка...
             </p>
           </span>
         </div>
@@ -92,10 +90,9 @@ export const Form = () => {
               <h1>Про сезони</h1>
             </div>
             <p>
-              {" "}
-              Lorem ipsum dolor sit amet consectetur. Vitae vitae non lectus
-              enim ut volutpat. Nibh feugiat ridiculus sed tortor cras id
-              malesuada curabitur felis.{" "}
+              Зміна сезонів відбувається, конкретних дат ми не маємо, але
+              гарантуємо, що на одному сезоні Вам вистачить часу для комфортної
+              гри
             </p>
           </span>
         </div>
@@ -106,10 +103,8 @@ export const Form = () => {
               <h1>Про гру</h1>
             </div>
             <p>
-              {" "}
-              Lorem ipsum dolor sit amet consectetur. Vitae vitae non lectus
-              enim ut volutpat. Nibh feugiat ridiculus sed tortor cras id
-              malesuada curabitur felis.{" "}
+              Ми маємо гарний хостинг, навіть при великому онлайні Вам буде
+              комфортно грати!{" "}
             </p>
           </span>
         </div>
