@@ -7,17 +7,42 @@ export const Modal = ({ onClick }) => {
         <div className={styles.info}>
           <h1>Подача форми</h1>
           <p>
-            Щоб отримати прохідку, Вам потрібно звернутись до нашого адміну
-            серверу, та заповнити простеньку
-            <span> заявку (Клікни щоб скопіювати) </span>
-            та почекати до поки адмін прийме вашу заявку на сервер
+            Отримати прохідку можна після того, як Ви напишете нашому адміну,
+            після чого він надішле форму для оплати прохідки. Очікування
+            відповіді від адміну може зайняти від 1 до 3 днів
           </p>
           <div className={styles.about}>
             <h3>Рекомендуємо завантажити</h3>
             <div className={styles.voice}>
               <img src="assets/voice.png" width="50" />
               <h5>
-                Simple Voice - <span>*посилання на оф. сайт*</span>
+                Simple Voice -{" "}
+                <span>
+                  <a
+                    target="_blank"
+                    href="https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat"
+                  >
+                    *посилання на оф. сайт*
+                  </a>
+                </span>
+              </h5>
+            </div>
+            <div className={styles.voice}>
+              <img
+                style={{ marginRight: "5px" }}
+                src="assets/emote.png"
+                width="50"
+              />
+              <h5>
+                EmoteCraft -{" "}
+                <span>
+                  <a
+                    target="_blank"
+                    href="https://www.curseforge.com/minecraft/mc-mods/emotecraft"
+                  >
+                    *посилання на оф. сайт*
+                  </a>
+                </span>
               </h5>
             </div>
           </div>

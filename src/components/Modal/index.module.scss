@@ -1,4 +1,5 @@
 .modal{
+  overflow: auto;
  background: white;
   width: 60%;
   height: 60%;
@@ -62,10 +63,14 @@ body:has(.modal) {
   display: flex;
   align-items: center;
   span{
-    color: #1573ec;
+    a{
+      color: #1573ec;
+    }
+
   }
 }
 .about{
+  gap: 10px;
   display: flex;
   flex-direction: column;
 }
