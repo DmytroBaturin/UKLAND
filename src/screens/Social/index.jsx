@@ -14,7 +14,9 @@ export const Social = () => {
           href="https://www.tiktok.com/@uklandproject"
           img={"assets/tiktok.png"}
           title={"TikTok"}
-          text={"Тут цікавенькі короткі відео"}
+          text={
+            "Є бажання подивитися короткі відео про сервер? Тоді загляни у наш Tik Tok!"
+          }
         />
         <SocialCard
           href="https://discord.com/invite/wGPaVgsQAh"
@@ -23,10 +25,22 @@ export const Social = () => {
           text={"Основний чат нашої спільноти"}
         />
         <SocialCard
-          href="https://www.tiktok.com/@uklandproject"
-          img={"assets/wiki.png"}
-          title={"Wiki"}
-          text={"Тут всі наші правила, та важлива інформація"}
+          href="https://t.me/uklandproject"
+          img={"assets/telegram.png"}
+          title={"Telegram"}
+          text={"Головні новини та інформація сервера!"}
+        />
+        <SocialCard
+          href="https://www.instagram.com/uk.lland"
+          img={"assets/instagram.png"}
+          title={"Instagram"}
+          text={"Чудові картинки про сервер тільки тут!"}
+        />
+        <SocialCard
+          href="https://www.youtube.com/@uklandproject"
+          img={"assets/youtube.png"}
+          title={"Youtube"}
+          text={"Запасайся смаколиками та переглядай відео про наш сервер!"}
         />
       </div>
     </>
