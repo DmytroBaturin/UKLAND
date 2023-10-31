@@ -4,6 +4,7 @@ import { Store } from "../../screens/Store/index.jsx";
 import { Social } from "../../screens/Social/index.jsx";
 import { Footer } from "../../components/Footer/index.jsx";
 import { useEffect } from "react";
+import { Video } from "../../screens/Video";
 
 export const MainPage = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ export const MainPage = () => {
       <Main />
       <Advantages />
       <Store />
+      <Video />
       <Social />
     </>
   );

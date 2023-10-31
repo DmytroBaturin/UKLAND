@@ -63,7 +63,7 @@ export const Main = () => {
             style={buttonCopy}
           />
         </div>
-        <p>Minecraft: Java Edition 1.20.1</p>
+        <p>Приватний україномовний сервер на версії Minecraft 1.20.x</p>
       </div>
     </div>
   );

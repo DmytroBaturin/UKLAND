@@ -1,8 +1,12 @@
 import styles from "./index.module.scss";
+import useComponentVisible from "../../hooks/outsideclick.js";
+
 export const Modal = ({ onClick }) => {
+  const { ref } = useComponentVisible(true);
+
   return (
     <div className={styles.modalwraper}>
-      <div className={styles.modal}>
+      <div ref={ref} className={styles.modal}>
         <img width="30" src="assets/close.svg" onClick={onClick} />
         <div className={styles.info}>
           <h1>Подача форми</h1>
