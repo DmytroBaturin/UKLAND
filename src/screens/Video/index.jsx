@@ -8,7 +8,7 @@ export const Video = () => {
     <div className={styles.root}>
       <iframe
         src="https://www.youtube.com/embed/YayLyqk1AO8?si=m6f0EsVUv6zJFPls"
-        title="YouTube video player"
+        title="UKLAND || Україномовний приватний сервер"
         frameBorder="0"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope ;picture-in-picture; web-share"
         allowFullScreen
