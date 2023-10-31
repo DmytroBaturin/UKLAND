@@ -5,7 +5,7 @@ export const MobileNavbar = ({ onClick }) => {
   return (
     <div className={styles.root}>
       <span className={styles.menu}>
-        <NavLink onClick={() => onClick()} to="/news">
+        <NavLink onClick={() => onClick()} to="/rules">
           Правила
         </NavLink>
         <NavLink onClick={() => onClick()} to="/wiki">

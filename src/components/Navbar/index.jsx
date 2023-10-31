@@ -22,7 +22,7 @@ export const Navbar = () => {
           <img src="./assets/logo.svg" width="80" height="70" />
         </Link>
         <span className={styles.menu}>
-          <NavLink to="/news">Правила</NavLink>
+          <NavLink to="/rules">Правила</NavLink>
           <NavLink to="/wiki">Вікі</NavLink>
           <NavLink to="/why">Чому ми?</NavLink>
           <img

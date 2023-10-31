@@ -1,0 +1,27 @@
+.root{
+  padding-top: 120px;
+}
+.rules{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  li{
+    opacity: 0.5;
+  }
+}
+.rule{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (max-width: 550px){
+   h1{
+     font-size: 16px;
+   }
+  li{
+    font-size: 12px
+  }
+}

@@ -8,6 +8,7 @@ import { money } from "../../../public/assets/forms/money.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import { openModal } from "../../store/modalSlice.jsx";
 import { useState } from "react";
+import { onClickCopy } from "../../hooks/copyhook.js";
 export const Form = () => {
   const [copying, setCopy] = useState(false);
   const modalState = useSelector((state) => state.modalController.open);
@@ -20,30 +21,6 @@ export const Form = () => {
     background:
       "linear-gradient(99deg, #7F00FF -35.73%, #4A00E0 55.66%, #6F37E0 159.22%)",
   };
-  const onClickCopy = () => {
-    if (!copying) {
-      navigator.clipboard.writeText("ukland.pp.ua");
-      setCopy(true);
-      setButtonCopy((prevState) => {
-        return {
-          ...prevState,
-          background: "rgba(107, 220, 51, 0.25)",
-        };
-      });
-      setTimeout(() => {
-        setCopy(false);
-        setButtonCopy((prevState) => {
-          return {
-            ...prevState,
-            background: "none",
-          };
-        });
-      }, 1000);
-    } else if (copying) {
-      return 0;
-    }
-  };
-
   const [buttonCopy, setButtonCopy] = useState({
     background: "none",
     border: "1px solid white",
@@ -64,7 +41,7 @@ export const Form = () => {
           />
           <Button
             img={copy()}
-            onClick={() => onClickCopy()}
+            onClick={() => onClickCopy(copying, setButtonCopy, setCopy)}
             text="Скопіювати IP"
             style={buttonCopy}
           />
