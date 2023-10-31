@@ -15,8 +15,14 @@
   .buttons{
     flex-direction: column;
   }
+  .main{
+    img{
+      width: 50%;
+    }
+  }
 }
 .main{
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 40px;

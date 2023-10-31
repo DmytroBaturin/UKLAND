@@ -48,7 +48,7 @@ export const Main = () => {
       )}
 
       <div className={styles.main}>
-        <img src="/assets/logo.svg" />
+        <img style={styles.logos} src="/assets/logo.svg" />
         <div className={styles.buttons}>
           <Button
             onClick={() => onClickModal()}
