@@ -23,7 +23,7 @@ export const Modal = ({ onClick }) => {
             </p>
           </p>
         </div>
-        <a href="https://send.monobank.ua/jar/UbQzFQ5u7">
+        <a target="_blank" href="https://send.monobank.ua/jar/UbQzFQ5u7">
           <button>Купити прохідку</button>
         </a>
       </div>
