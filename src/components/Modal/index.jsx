@@ -22,44 +22,9 @@ export const Modal = ({ onClick }) => {
               Адміністратор! Очікуйте відповіді протягом 24-48годин!
             </p>
           </p>
-          <div className={styles.about}>
-            <h3>Рекомендуємо завантажити</h3>
-            <div className={styles.voice}>
-              <img src="assets/voice.png" width="50" />
-              <h5>
-                Simple Voice -{" "}
-                <span>
-                  <a
-                    target="_blank"
-                    href="https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat"
-                  >
-                    *посилання на оф. сайт*
-                  </a>
-                </span>
-              </h5>
-            </div>
-            <div className={styles.voice}>
-              <img
-                style={{ marginRight: "5px" }}
-                src="assets/emote.png"
-                width="50"
-              />
-              <h5>
-                EmoteCraft -{" "}
-                <span>
-                  <a
-                    target="_blank"
-                    href="https://www.curseforge.com/minecraft/mc-mods/emotecraft"
-                  >
-                    *посилання на оф. сайт*
-                  </a>
-                </span>
-              </h5>
-            </div>
-          </div>
         </div>
         <a href="https://send.monobank.ua/jar/UbQzFQ5u7">
-          <button>Подати заявку</button>
+          <button>Купити прохідку</button>
         </a>
       </div>
     </div>
