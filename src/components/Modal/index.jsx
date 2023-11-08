@@ -9,11 +9,18 @@ export const Modal = ({ onClick }) => {
       <div ref={ref} className={styles.modal}>
         <img width="30" src="assets/close.svg" onClick={onClick} />
         <div className={styles.info}>
-          <h1>Подача форми</h1>
+          <h1>Про оплату</h1>
           <p>
-            Отримати прохідку можна після того, як Ви напишете нашому адміну,
-            після чого він надішле форму для оплати прохідки. Очікування
-            відповіді від адміну може зайняти від 1 до 3 днів
+            Щоб купити прохідку, вам потрібно перейти на банку Monabank та
+            оплатити суму прохідки! <br />
+            Прохідки є: <br />
+            <h3>
+              1) На місяць - 50грн. <br /> 2) Назавжди - 150грн.
+            </h3>
+            <p>
+              Під платіж, вкажіть Ваш discord, щоб з вами зв'язався
+              Адміністратор! Очікуйте відповіді протягом 24-48годин!
+            </p>
           </p>
           <div className={styles.about}>
             <h3>Рекомендуємо завантажити</h3>
@@ -51,7 +58,9 @@ export const Modal = ({ onClick }) => {
             </div>
           </div>
         </div>
-        <button>Подати заявку</button>
+        <a href="https://send.monobank.ua/jar/UbQzFQ5u7">
+          <button>Подати заявку</button>
+        </a>
       </div>
     </div>
   );
