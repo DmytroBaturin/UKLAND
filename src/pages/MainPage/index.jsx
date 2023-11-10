@@ -16,7 +16,6 @@ export const MainPage = () => {
       <Main />
       <Advantages />
       <Store />
-      <Video />
       <Social />
     </>
   );
