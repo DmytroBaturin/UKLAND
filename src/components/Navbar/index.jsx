@@ -24,7 +24,6 @@ export const Navbar = () => {
         <span className={styles.menu}>
           <NavLink to="/rules">Правила</NavLink>
           <NavLink to="/wiki">Вікі</NavLink>
-          <NavLink to="/why">Чому ми?</NavLink>
           <img
             onClick={() => {
               setOpen(!open);

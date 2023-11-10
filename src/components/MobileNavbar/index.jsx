@@ -11,9 +11,6 @@ export const MobileNavbar = ({ onClick }) => {
         <NavLink onClick={() => onClick()} to="/wiki">
           Вікі
         </NavLink>
-        <NavLink onClick={() => onClick()} to="/why">
-          Чому ми?
-        </NavLink>
       </span>
     </div>
   );
