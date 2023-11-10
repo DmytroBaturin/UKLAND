@@ -20,7 +20,6 @@ export const Main = () => {
         transform: "translateY(0)",
         opacity: 1,
       },
-      delay: 1000,
     }),
     [],
   );
