@@ -6,13 +6,13 @@ export const Social = () => {
       <div className={styles.title}>
         <h1>Шукайте нас також в...</h1>
         <p className={styles.subtitle}>
-          наші соцмережі де ми будемо раді вас бачити
+          наші соцмережі, де ми будемо раді вас бачити
         </p>
       </div>
       <div className={styles.container}>
         <SocialCard
           href="https://www.tiktok.com/@uklandproject"
-          img={"assets/tiktok.png"}
+          img={"assets/tiktok1.png"}
           title={"TikTok"}
           text={
             "Є бажання подивитися короткі відео про сервер? Тоді загляни у наш Tik Tok!"
