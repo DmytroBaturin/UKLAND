@@ -5,7 +5,11 @@ import { MainPage } from "./pages/MainPage/index.jsx";
 import { RulePage } from "./pages/RulePage";
 import { Footer } from "./components/Footer";
 import { SoonPage } from "./pages/SoonPage";
+import { useEffect } from "react";
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar />

@@ -7,7 +7,24 @@ import { useSelector, useDispatch } from "react-redux";
 import { Modal } from "../../components/Modal/index.jsx";
 import { openModal } from "../../store/modalSlice.jsx";
 import { useEffect, useState } from "react";
+import { useSpring, animated } from "@react-spring/web";
+
 export const Main = () => {
+  const [props, api] = useSpring(
+    () => ({
+      from: {
+        transform: "translateY(4rem)",
+        opacity: 0,
+      },
+      to: {
+        transform: "translateY(0)",
+        opacity: 1,
+      },
+      delay: 1000,
+    }),
+    [],
+  );
+
   const [copying, setCopy] = useState(false);
   const [buttonCopy, setButtonCopy] = useState({
     background: "none",
@@ -47,7 +64,7 @@ export const Main = () => {
         />
       )}
 
-      <div className={styles.main}>
+      <animated.div style={props} className={styles.main}>
         <img style={styles.logos} src="/assets/logo.svg" />
         <div className={styles.buttons}>
           <Button
@@ -64,7 +81,7 @@ export const Main = () => {
           />
         </div>
         <p>Приватний україномовний сервер на версії Minecraft 1.20.x</p>
-      </div>
+      </animated.div>
     </div>
   );
 };
