@@ -22,7 +22,7 @@ export const Social = () => {
           href="https://discord.com/invite/wGPaVgsQAh"
           img={"assets/discord.png"}
           title={"Discord"}
-          text={"Основний чат нашої спільноти"}
+          text={"Основний чат нашої спільноти, де ми Вас чекаємо!"}
         />
         <SocialCard
           href="https://t.me/uklandproject"
